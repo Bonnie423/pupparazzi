@@ -3,9 +3,7 @@ import * as Path from 'node:path'
 
 import express from 'express'
 import hbs from 'express-handlebars'
-import fs from 'node:fs/promises'
 
-import * as lib from './lib.js'
 import puppiesRoutes from './routes.js'
 
 const server = express()
