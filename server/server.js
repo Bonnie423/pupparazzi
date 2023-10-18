@@ -23,11 +23,4 @@ server.set('views', Path.resolve('server/views'))
 
 // Your routes/router(s) should go here
 
-server.get('/', async (req, res) => {
-  const puppies = await lib.getPuppiesData()
-
-  res.render('home', puppies)
-})
-
-
 export default server

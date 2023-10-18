@@ -45,6 +45,17 @@ export async function updatePuppy(puppy){
   }
 }
 
+export async function addPuppy(puppy){
+  try{
+    const puppyData = await getPuppiesData()
+    puppyData.puppies.push(puppy)
+    await updatePuppyInfo(puppyData)
+
+  }catch(err){
+    console.error(err)
+  }
+}
+
 export async function updatePuppyInfo(data){
   const newInfo = JSON.stringify(data,null, 2)
  await fs.writeFile(dataPath, newInfo, 'utf-8' )
