@@ -3,7 +3,10 @@ import * as Path from 'node:path'
 
 import express from 'express'
 import hbs from 'express-handlebars'
+import fs from 'node:fs/promises'
 
+import * as lib from './lib.js'
+import puppiesRoutes from './routes.js'
 
 const server = express()
 
@@ -11,6 +14,7 @@ const server = express()
 const publicFolder = Path.resolve('public')
 server.use(express.static(publicFolder))
 server.use(express.urlencoded({ extended: false }))
+server.use('/', puppiesRoutes)
 
 // Handlebars configuration
 server.engine('hbs', hbs.engine({ extname: 'hbs' }))
@@ -18,5 +22,12 @@ server.set('view engine', 'hbs')
 server.set('views', Path.resolve('server/views'))
 
 // Your routes/router(s) should go here
+
+server.get('/', async (req, res) => {
+  const puppies = await lib.getPuppiesData()
+
+  res.render('home', puppies)
+})
+
 
 export default server
