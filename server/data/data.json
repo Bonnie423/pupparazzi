@@ -10,7 +10,7 @@
     {
       "id": 2,
       "name": "Coco",
-      "owner": "Bonnie",
+      "owner": "Chloe",
       "image": "/images/puppy2.jpg",
       "breed": "Labrador"
     },
@@ -23,8 +23,8 @@
     },
     {
       "id": 4,
-      "name": "Sadie",
-      "owner": "Sam",
+      "name": "Seashell",
+      "owner": "Talia",
       "image": "/images/puppy4.jpg",
       "breed": "Labrador"
     },
@@ -37,8 +37,8 @@
     },
     {
       "id": 6,
-      "name": "Bella",
-      "owner": "Bonnie",
+      "name": "Tiddles",
+      "owner": "Brianna",
       "image": "/images/puppy6.jpg",
       "breed": "Labrador"
     },
@@ -48,7 +48,13 @@
       "owner": "Ricky",
       "image": "/images/puppy7.jpg",
       "breed": "Labrador"
+    },
+    {
+      "id": 8,
+      "name": "Plum",
+      "owner": "Bonnie",
+      "image": "https://cdn.pixabay.com/photo/2018/05/11/08/11/dog-3389729_1280.jpg",
+      "breed": "No idea"
     }
-    
   ]
 }

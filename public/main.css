@@ -1,6 +1,7 @@
 body {
   background-color: #81eecd;
   font-family: 'Spirax', cursive;
+  text-align: center;
 }
 
 .container {
@@ -54,4 +55,16 @@ body {
 input{
   padding: 5px;
   margin: 5px;
+}
+p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.button{
+  
+  border-radius: 5px;
+  border: solid black 1px;
+  width: 6vw;
+  
 }

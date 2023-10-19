@@ -1,3 +1,4 @@
+<div>
 <form class="form" action="/edit/{{id}}" method="post">
   <img class="img-circle" src="{{image}}" alt="{{name}}">
   <label for="name" class="form-item">
@@ -17,5 +18,12 @@
   
   <input type="hidden" name="image" value="{{image}}">
   
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" class="button">
+ 
 </form>
+<form action="/delete/{{id}}" method="POST">
+  <!-- Include a hidden input field to specify the HTTP method -->
+  <input type="submit" name="_method" value="Delete" class="button">
+  {{!-- <button type="submit" class="btn btn-danger">Delete Puppy</button> --}}
+</form>
+</div>

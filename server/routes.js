@@ -5,8 +5,10 @@ const router = express.Router()
 
 router.get('/', async (req, res) => {
   const puppies = await lib.getPuppiesData()
+ 
 
   res.render('home', puppies)
+  // res.send(`Hello`)
 })
 
 router.get('/new', (req, res) => {
@@ -57,5 +59,15 @@ router.post('/edit/:id', async (req, res) => {
   }
 })
 
+router.post('/delete/:id', async (req, res) => {
+  try {
+    const id = Number(req.params.id);
+    await lib.deletePuppy(id);
+    res.render(`delete`);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Failed to delete the puppy.');
+  }
+});
 
 export default router
