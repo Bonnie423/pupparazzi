@@ -1,5 +1,5 @@
 body {
-  background-color: #FFCCCC;
+  background-color: #81eecd;
   font-family: 'Spirax', cursive;
 }
 
@@ -42,6 +42,7 @@ body {
 .nav {
   text-align: center;
   color: black;
+  margin: 5px 0;
 }
 
 .form {
@@ -49,4 +50,8 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+}
+input{
+  padding: 5px;
+  margin: 5px;
 }
