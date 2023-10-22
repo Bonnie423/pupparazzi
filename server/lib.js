@@ -6,6 +6,7 @@ export async function getPuppiesData() {
   try {
     return await fs.readFile(dataPath, `utf-8`).then((data) => JSON.parse(data))
   } catch (err) {
+  
     console.error(err.message)
   }
 }

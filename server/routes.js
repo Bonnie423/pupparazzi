@@ -16,9 +16,15 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage })
 
 router.get('/', async (req, res) => {
-  const puppies = await lib.getPuppiesData()
+  try{
 
-  res.render('home', puppies)
+    const puppies = await lib.getPuppiesData()
+  
+    res.render('home', puppies)
+  }catch(err){
+    console.error('data fetch failed')
+    res.status(500)
+  }
 })
 
 router.get('/new', (req, res) => {
