@@ -9,15 +9,15 @@
     },
     {
       "id": 2,
-      "name": "Coco",
-      "owner": "Chloe",
+      "name": "Snow",
+      "owner": "Bonnie",
       "image": "/images/puppy2.jpg",
       "breed": "Labrador"
     },
     {
       "id": 3,
       "name": "Magnum",
-      "owner": "Michael",
+      "owner": "Bonnie",
       "image": "/images/puppy3.jpg",
       "breed": "Rottweiler"
     },
@@ -54,6 +54,20 @@
       "name": "Plum",
       "owner": "Bonnie",
       "image": "https://cdn.pixabay.com/photo/2018/05/11/08/11/dog-3389729_1280.jpg",
+      "breed": "No idea"
+    },
+    {
+      "id": 11,
+      "name": "sampson",
+      "owner": "Bonnie",
+      "image": "https://cdn.pixabay.com/photo/2017/09/25/13/12/puppy-2785074_1280.jpg",
+      "breed": "tade"
+    },
+    {
+      "id": 12,
+      "name": "Plum",
+      "owner": "Bonnie",
+      "image": "images/img.gif",
       "breed": "No idea"
     }
   ]

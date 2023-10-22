@@ -1,6 +1,6 @@
 <h2 class="title">Add a new puppy</h2>
 
-<form class="form" action="/new" method="post">
+<form class="form" action="/new" method="post" enctype="multipart/form-data">
   <label for="name" class="form-item">
     Name: <input type="text" name="name" id="name">
   </label>
@@ -13,10 +13,16 @@
     Owner:
     <input type="text" name="owner" id="owner">
   </label>
-
-  <label for="image" class="form-item">
-    Image URL: <input type="text" name="image" id="image">
+  <label for="imageURL"> Image URL:
+    <input type="text" name="imageURL" id="image" placeholder="Enter an external url or choose a local file">
   </label>
+
+  <label for="UploadImage" class="form-item">
+    Upload Image: 
+    <input type="file" name="image">
+ 
+  </label>
+  
 
   <input type="submit" value="Submit">
 </form>
